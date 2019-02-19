@@ -10,7 +10,7 @@ public class Util {
     private static Gson gson = new Gson();
 
     /**
-     * This is used to invoke a JS function from native code. more suited in case of reactive programming.
+     * This is used to invoke a JS function from native code. LinkerUtil is batched to the native code using React-native BatchedBridge
      *
      * @param functionName
      * @param param

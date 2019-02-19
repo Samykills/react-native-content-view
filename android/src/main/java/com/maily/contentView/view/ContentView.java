@@ -1,7 +1,8 @@
-package com.maily.contentView;
+package com.maily.contentView.view;
 
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactContext;
+import com.maily.contentView.R;
 import com.maily.contentView.utils.Util;
 
 public class ContentView extends LinearLayout {
@@ -31,7 +33,7 @@ public class ContentView extends LinearLayout {
             }
         });
         textView = view.findViewById(R.id.contentViewText);
-//        textView.setMovementMethod(new ScrollingMovementMethod());
+        textView.setMovementMethod(new ScrollingMovementMethod());
     }
 
     public void setContentViewText(String contentViewText) {

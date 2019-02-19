@@ -1,10 +1,11 @@
-package com.maily.contentView;
+package com.maily.contentView.view;
 
 import android.view.View;
 
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.maily.contentView.view.ContentView;
 
 public class ContentViewManager extends SimpleViewManager {
     @Override
